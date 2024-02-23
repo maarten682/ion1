@@ -1,0 +1,14 @@
+# Correction for not connecting relay properly
+CONFIG_ION_RELAY_PIN=34
+CONFIG_ION_RELAY_PIN_INVERTED=n
+
+# !!!!!!!!!!Insert math for 7S LiFePO4 here!!!!!!!
+# Divider: 100k/10k (scale = 11.0)
+# The scale of the divider, times 1000
+CONFIG_ION_DIVIDER_SCALE=11000
+
+# Consider 22.4V (3.2V/cell for 7s) empty
+CONFIG_ION_ADC_EMPTY_MV=22400
+
+# Consider 29.4V (4.2V/cell for 7s) full
+CONFIG_ION_ADC_FULL_MV=29400
